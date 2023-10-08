@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+
+    a:hover {
+      color: rgb(176, 168, 75);
+    }
+
+    
+    button:hover {
+      background-color: rgb(15, 17, 20);
+    }
+  </style>
+
+</head>
+<body>
+  <h2> ASSIGNMENT</h2>
+  <div onclick="showMessageOnClick()">click here</div>
+  <br>
+  <div id="targetElement">click on button</div><br>
+  <button onclick="hideElementOnClick()">disappear  text</button><br>
+  <a href="#" style="color: blue;" onmouseover="this.style.color='red'" onmouseout="this.style.color='blue'">Hover here</a><br>
+  <a href="#" onclick="scrollToTop()">top</a><br>
+  <a href="#" onclick="playSound()">Play Sound</a><br>
+ 
+  <button onclick="alertMessage()"> Message</button><br>
+  <div onmouseover="showMessageOnMouseOver()">Mouse over this</div><br>
+  <div id="elementToHide" onmouseout="hideElementOnMouseOut()">Mouse out of this to hide</div><br><br>
+ 
+
+  <h2>Registration Form:</h2>
+  <form onsubmit="return validateForm()">
+    <label for="name">Name:</label>
+    <input type="text" id="name" name="name"><br><br>
+
+    <label for="email">Email:</label>
+    <input type="email" id="email" name="email"><br><br>
+
+    <input type="submit" value="Submit">
+  </form>
+</body>
+</html>
